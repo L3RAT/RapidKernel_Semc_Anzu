@@ -268,6 +268,12 @@ config CPU_FREQ_GOV_SMARTASS2
      help
      'smartassV2' - a "smart" optimized governor!
 
+config CPU_FREQ_DEFAULT_GOV_SMARTASSH3
+	bool "smartassH3"
+	select CPU_FREQ_GOV_SMARTASSH3
+	help
+	  Use the CPUFreq governor 'SmartassH3' as default.
+
 config CPU_FREQ_GOV_SMOOTHASS
 	tristate "'smoothass' cpufreq governor"
 	depends on CPU_FREQ
