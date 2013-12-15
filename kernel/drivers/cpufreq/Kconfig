@@ -268,4 +268,12 @@ config CPU_FREQ_GOV_SMARTASS2
      help
      'smartassV2' - a "smart" optimized governor!
 
+config CPU_FREQ_GOV_SMOOTHASS
+	tristate "'smoothass' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	smoothass' - a "slightly more agressive smartass" governor!
+ 	
+	If in doubt, say N.
+
 endif	# CPU_FREQ
