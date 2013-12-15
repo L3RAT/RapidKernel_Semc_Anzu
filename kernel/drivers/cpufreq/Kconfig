@@ -236,6 +236,14 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVEX
 	help
 	  Use the CPUFreq governor 'interactiveX' as default.
 
+config CPU_FREQ_GOV_LULZACTIVE
+	tristate "'Lulzactive' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	  'Lulzactive' - a "smart" optimized governor for the hero!
+
+	  If in doubt, say N.
+
 config CPU_FREQ_GOV_ONDEMANDX
 	tristate "'ondemandX' cpufreq governor"
 	depends on CPU_FREQ
