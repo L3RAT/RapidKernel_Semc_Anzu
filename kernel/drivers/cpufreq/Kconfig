@@ -206,4 +206,10 @@ config CPU_FREQ_GOV_CONSERVATIVE
 
 	  If in doubt, say N.
 
+config CPU_FREQ_GOV_SMARTASS2
+     tristate "'smartassV2' cpufreq governor"
+     depends on CPU_FREQ
+     help
+     'smartassV2' - a "smart" optimized governor!
+
 endif	# CPU_FREQ
