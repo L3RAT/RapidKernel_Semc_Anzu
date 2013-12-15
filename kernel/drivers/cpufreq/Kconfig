@@ -230,6 +230,12 @@ config CPU_FREQ_GOV_INTELLIDEMAND2
 
           If in doubt, say N.
 
+config CPU_FREQ_DEFAULT_GOV_INTERACTIVEX
+	bool "interactiveX"
+	select CPU_FREQ_GOV_INTERACTIVEX
+	help
+	  Use the CPUFreq governor 'interactiveX' as default.
+
 config CPU_FREQ_GOV_ONDEMANDX
 	tristate "'ondemandX' cpufreq governor"
 	depends on CPU_FREQ
